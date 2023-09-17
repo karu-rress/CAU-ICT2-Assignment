@@ -13,6 +13,9 @@ for (const elem of sns) {
         case 'tistory':
             open('https://karupro.tistory.com', '_blank');
             return;
+        case 'github':
+            open('https://github.com/karu-rress', '_blank');
+            return;
         default:
             alert('비공개 SNS입니다.');
             return;
