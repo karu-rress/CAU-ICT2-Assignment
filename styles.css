@@ -42,24 +42,34 @@ article {
     border-radius: 50px 50px 0px 0px;
 
     display: grid;
-
     grid-template-columns: repeat(auto-fill, minmax(max(400px, calc((100% - 20px) / 3)), 1fr));
     grid-auto-rows: minmax(300px, auto);
     gap: 10px;
 
     align-items: center;
     justify-items: center;
-    margin: 0px 3vw 0px 3vw;
+    margin: 0px 5vw 0px 5vw;
 }
 
 .gridcell {
     width: 400px;
     padding: 0px 0px 30px 0px;
 } .gridcell:hover {
-    border: 1px solid #d05d30;
+    border: 2px dashed var(--color);
+    box-shadow: 20px 14px rgb(56, 56, 56);
 } .gridcell:hover > h2 {
     font-size: 33px;
     font-weight: bold;
+    
+    background: linear-gradient(to right, #6666ff, #0077ff , #48ff00, #ff3355, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 2s ease-in infinite;
+    background-size: 400% 100%;
+} @keyframes rainbow_animation {
+    0%,100% { background-position: 0 0; }
+    50% { background-position: 100% 0;  }
 }
 
 /* Table */
@@ -70,7 +80,7 @@ td, th {
     border: 1px solid var(--color);
 }
 td > img {
-    margin: 20px 10px 3px 10px;
+    margin: 7px;
     width: 320px;
 }
 .tbltitle {
@@ -79,9 +89,6 @@ td > img {
     font-weight: bold;
     text-align: center;
 }
-
-
-
 
 /* Section Title */
 h2 {
@@ -138,27 +145,24 @@ h2 {
     background-color: black;
 }
 
+#contact {
+    font-size: 23px;
+    font-weight: bold;
+    color: var(--color);
+}
+form input {
+    accent-color: var(--color);
+    border: dotted black;
+    transform: scale(1.2);
+}
+
 hr {
-    width: 95%
+    margin: 10px 5vw
 }
 
 footer {
     background-color: white;
     border-radius: 0px 0px 50px 50px;
     padding: 7px 0px 7px 0px;
-    margin: 0px 3vw 50px 3vw;
-    /*
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    height: 110px;
-    background-color: black;
-    margin-bottom: 0px;
-}
-footer > p {
-    font-size: 15px;
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-    text-align: center;
-    */
+    margin: 0px 5vw 50px 5vw;
 }

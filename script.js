@@ -22,6 +22,20 @@ for (const elem of sns) {
     }});
 }
 
+/** @type {NodeListOf<HTMLInputElement>} */
+const radio = document.querySelectorAll("input");
+const contact = document.getElementById('contact');
+for (const elem of radio) {
+    elem.addEventListener('change', () => {
+        const maildict = {
+            'cau' : 'nsun527@cau.ac.kr',
+            'rr' : 'karu.rress@outlook.com',
+            'gmail' : 'nsun5274@gmail.com',
+        };
+        contact.innerText = '📧 ' + maildict[elem.id];
+    });
+}
+
 
 // 디버그시 3초마다 페이지 자동 새로고침
 if (_DEBUG) {
