@@ -75,6 +75,8 @@ article {
 /* Table */
 table {
     grid-row: span 2;
+    padding: 0;
+    margin: 0
 }
 td, th {
     border: 1px solid var(--color);
@@ -87,7 +89,6 @@ td > img {
     background-color: var(--color);
     color: white;
     font-weight: bold;
-    text-align: center;
 }
 
 /* Section Title */
