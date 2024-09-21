@@ -1,10 +1,13 @@
 # 정보통신기술 II 
-  \
-**중앙대학교 산업보안학과 1학년**  
-**20234748 나선우**
   
-정보통신기술II 자기소개 페이지 과제입니다.  
-[페이지 미리보기(github.io)](https://karu-rress.github.io/CAU-ICT2-Assignment)
+정보통신기술II 자기소개 페이지 과제입니다. [페이지 미리보기(github.io)](https://karu-rress.github.io/CAU-ICT2-Assignment)  
+
+**과목 정보**
+- 과목유형: 이론강의
+- 이수학점: 3학점
+- 강의시간: 3시간
+- 취득평점: A+(4.5)
+
 
 ## 파일 소개
     .                 
